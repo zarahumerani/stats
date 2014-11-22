@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Who's Better at Math</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+	<style type="text/css">
+
+		body {
+			margin-left: 15%;
+			margin-right: 15%;
+
+			font-family: "Open Sans", sans-serif;
+		}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<div class="page-header">
+		Finish the following five multiplicaition questions as fast as possible. When you are done, submit as either male or female.
+	</div>
+
+	<div class="alert alert-warning" style="display: none;">One of your answers is wrong! Fix it!</div>
+
+	<div class="input-group">
+  		<span class="input-group-addon">100 x 70 =</span>
+  		<input type="text" class="form-control" style="width: 60px;" id="no1">
+	</div>
+	<br>
+
+
+	<div class="input-group">
+  		<span class="input-group-addon">12 x 100 =</span>
+ 		 <input type="text" class="form-control" style="width: 60px;" id="no2">
+	</div>
+	<br>
+
+	<div class="input-group">
+  		<span class="input-group-addon">100 x 56 =</span>
+  		<input type="text" class="form-control" style="width: 60px;" id="no3">
+	</div> 
+	<br>
+
+	<div class="input-group">
+  		<span class="input-group-addon">100 x 49 =</span>
+  		<input type="text" class="form-control" style="width: 60px;" id="no4">
+	</div>
+	<br>
+
+	<div class="input-group">
+  		<span class="input-group-addon">30 x 100 =</span>
+  		<input type="text" class="form-control" style="width: 60px;" id="no5">
+	</div> 
+	
+	<hr>
+
+	<p class="btn btn-primary">Submit as male</p>
+	<p class="btn btn-danger">Submit as female</p>
+
+	<!-- asdfasdf -->
+
+	<script type="text/javascript">
+	   var startTime = Date.now();
+
+		$(".btn").click(function() {
+			var ans1 = $("#no1").val();
+			var ans2 = $("#no2").val();
+			var ans3 = $("#no3").val();
+			var ans4 = $("#no4").val();
+			var ans5 = $("#no5").val();
+			console.log("etest");
+		  var time = (Date.now() - startTime) / 1000 + "seconds"; 
+
+			if(ans1 === "7000" && ans2 === "1200" && ans3 === "5600" && ans4 === "4900" && ans5 === "3000")
+			   alert("Correct!" + time);
+			else
+			  $(".alert").show();
+
+
+		});
+	</script>
+
+</body>
+</html>
